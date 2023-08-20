@@ -6,6 +6,7 @@ use App\Mail\myemail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class MailController extends Controller
 {
@@ -20,14 +21,14 @@ class MailController extends Controller
             'name.required' => 'نام و نام خانوادگی اجباری است.',
             'name.string' => 'نام و نام خانوادگی بصروت رشته باید باشد.',
         ]);
-        \App\Models\Mail::create($validate);
+        \App\Models\Email::create($validate);
 
         try {
             Mail::to('cantact@modernkasbokar.ir')->send(new myemail($request->name, $request->phone_number,$request->job,$request->email));
         } catch (\Exception $error) {
             Log::info($error);
         }
-
+        Alert::success('ثبت موفق', 'درخواست شما با موفقیت ثبت شده است ');
         return redirect()->back();
     }
 

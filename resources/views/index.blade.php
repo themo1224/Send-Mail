@@ -5,13 +5,13 @@
     <meta charset="utf-8">
 
     <!--====== Title ======-->
-    <title>Smash - Bootstrap Business Template</title>
+    <title>همایش تکنیک های رشد کسب و کار</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="{{asset('assets/images/favicon.png')}}" type="image/png">
+    <link rel="shortcut icon" href="{{asset('assets/images/post.png')}}" type="image/png">
 
     <!--====== Magnific Popup CSS ======-->
     <link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}">
@@ -31,14 +31,18 @@
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="{{asset('assets/css/style-rtl.css')}}">
 
+
 </head>
 
 <body>
-    <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+@include('sweetalert::alert')
 
-    <!--====== PRELOADER PART START ======-->
+{{--@if(session('message'))--}}
+{{--    <div class="alert alert-success" role="alert">--}}
+{{--        <h4 class="alert-heading">ثبت نام موفقیت آمیز بود!</h4>--}}
+{{--        <p>{{ session('message') }}</p>--}}
+{{--    </div>--}}
+{{--    @endif--}}
 
     <div class="preloader">
         <div class="loader">
@@ -83,6 +87,7 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="slider-content">
+                                    <h4 class="text-white ">اداره کل پست استان گیلان برگذار میکند</h4>
                                     <h1 class="title pb-3">همایش</h1>
                                     <h4 class="text-white pt-4">تکنیک های رشد کسب و کار آنلاین با تکیه بر خدمات پست</h4>
                                     <ul class="slider-btn rounded-buttons">
@@ -112,7 +117,7 @@
             {{ session('success') }}
         </div>
     @endif
-    <section id="contact" class="contact-area">
+    <section  class="contact-area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-10">
@@ -160,7 +165,10 @@
                     </div>
                 </div> <!-- row -->
             </div> <!-- contact info -->
-            <div class="row">
+
+
+
+            <div class="row" id="contact">
                 <div class="col-lg-12 d-flex">
                     <div class="contact-wrapper form-style-two pt-115">
                         <h4 class="contact-title pb-10 text-center"><i class="lni lni-envelope"></i>ثبت نام<span></span></h4>
@@ -230,7 +238,7 @@
                         <a class="mt-30" href="index.html"><img src="assets/images/logo.svg" alt="Logo"></a>
                     </div> <!-- footer logo -->
                     <ul class="social text-center mt-60">
-                        <li><a href="https://facebook.com/uideckHQ"><i class="lni lni-facebook-filled"></i></a></li>
+                        <li><a href="https://facebook.com/uideckHQ"><img src="{{asset('assets/images/sib.png')}}" style="width: 4rem" alt="sib"></a></li>
                         <li><a href="https://twitter.com/uideckHQ"><i class="lni lni-twitter-original"></i></a></li>
                         <li><a href="https://instagram.com/uideckHQ"><i class="lni lni-instagram-original"></i></a></li>
                         <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
