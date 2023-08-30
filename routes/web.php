@@ -18,3 +18,8 @@ Route::get('/', function () {
 });
 Route::post('/mail', [\App\Http\Controllers\MailController::class, 'send'])->name('mail');
 Route::get('/success', [\App\Http\Controllers\MailController::class, 'success'])->name('success');
+Route::get('/success', [\App\Http\Controllers\MailController::class, 'success'])->name('success');
+
+Route::prefix('modiriate_admin_kasbokar')->group(function () {
+    Route::get('/',[\App\Http\Controllers\Admin\ShowController::class,'show'])->name('admin');
+});

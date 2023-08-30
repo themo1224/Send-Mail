@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c61ff82cbf0142a401a48a8161e1595a",
+    "content-hash": "f627135d3f232b12218d3f8cf304daf6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -961,6 +961,108 @@
             "time": "2023-08-03T15:06:02+00:00"
         },
         {
+            "name": "kavenegar/laravel",
+            "version": "v1.3.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kavenegar/kavenegar-laravel.git",
+                "reference": "07fbb8f234877af4d560d4286003ecc6c731b151"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kavenegar/kavenegar-laravel/zipball/07fbb8f234877af4d560d4286003ecc6c731b151",
+                "reference": "07fbb8f234877af4d560d4286003ecc6c731b151",
+                "shasum": ""
+            },
+            "require": {
+                "kavenegar/php": "*"
+            },
+            "type": "laravel-package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Kavenegar\\Laravel\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Kavenegar": "Kavenegar\\Laravel\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Kavenegar\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kavenegar API Team",
+                    "email": "support@kavenegar.com"
+                }
+            ],
+            "description": "laravel 4 and 5 kavenegar integration",
+            "keywords": [
+                "api",
+                "kavenegar",
+                "laravel",
+                "sms"
+            ],
+            "support": {
+                "issues": "https://github.com/kavenegar/kavenegar-laravel/issues",
+                "source": "https://github.com/kavenegar/kavenegar-laravel/tree/v1.3.7"
+            },
+            "time": "2023-05-23T10:24:45+00:00"
+        },
+        {
+            "name": "kavenegar/php",
+            "version": "v1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kavenegar/kavenegar-php.git",
+                "reference": "884561b8d8c91b01f7db25284c2be9923c809412"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kavenegar/kavenegar-php/zipball/884561b8d8c91b01f7db25284c2be9923c809412",
+                "reference": "884561b8d8c91b01f7db25284c2be9923c809412",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kavenegar\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kavenegar API Team",
+                    "email": "support@kavenegar.com"
+                }
+            ],
+            "description": "A PHP wrapper for Kavenegar's API",
+            "homepage": "http://github.com/Kavenegar/kavenegar-php",
+            "keywords": [
+                "api",
+                "kavenegar",
+                "sms"
+            ],
+            "support": {
+                "issues": "https://github.com/kavenegar/kavenegar-php/issues",
+                "source": "https://github.com/kavenegar/kavenegar-php/tree/master"
+            },
+            "time": "2019-02-26T12:49:19+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v8.83.27",
             "source": {
@@ -1663,6 +1765,121 @@
                 }
             ],
             "time": "2023-08-05T12:09:49+00:00"
+        },
+        {
+            "name": "melipayamak/laravel",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Melipayamak/melipayamak-laravel.git",
+                "reference": "8666e3afb2248c5de73b35e3c709a235a7a15393"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Melipayamak/melipayamak-laravel/zipball/8666e3afb2248c5de73b35e3c709a235a7a15393",
+                "reference": "8666e3afb2248c5de73b35e3c709a235a7a15393",
+                "shasum": ""
+            },
+            "require": {
+                "melipayamak/php": "1.0.0"
+            },
+            "type": "laravel-package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Melipayamak\\Laravel\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Melipayamak": "Melipayamak\\Laravel\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Melipayamak\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "melipayamak",
+                    "email": "melipayamak.ir@gmail.com"
+                },
+                {
+                    "name": "Ara Code It",
+                    "email": "ahnara92@gmail.com"
+                }
+            ],
+            "description": "Laravel Melipayamak Integration",
+            "homepage": "http://github.com/Melipayamak/melipayamak-laravel",
+            "keywords": [
+                "api",
+                "laravel",
+                "melipayamak",
+                "sms"
+            ],
+            "support": {
+                "issues": "https://github.com/Melipayamak/melipayamak-laravel/issues",
+                "source": "https://github.com/Melipayamak/melipayamak-laravel/tree/1.0.0"
+            },
+            "time": "2019-12-23T13:20:17+00:00"
+        },
+        {
+            "name": "melipayamak/php",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Melipayamak/melipayamak-php.git",
+                "reference": "b8f7db07eef1fa57f8a23d379949e3f04cb923b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Melipayamak/melipayamak-php/zipball/b8f7db07eef1fa57f8a23d379949e3f04cb923b8",
+                "reference": "b8f7db07eef1fa57f8a23d379949e3f04cb923b8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Melipayamak\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Melipayamak Team",
+                    "email": "melipayamak.ir@gmail.com"
+                },
+                {
+                    "name": "Ara Code It",
+                    "email": "ahnara92@gmail.com"
+                },
+                {
+                    "name": "Amirhossein Mehrvarzi",
+                    "email": "info@trigger.ir"
+                }
+            ],
+            "description": "A PHP wrapper for melipayamak's web services",
+            "homepage": "http://github.com/Melipayamak/melipayamak-php",
+            "keywords": [
+                "api",
+                "melipayamak",
+                "sms"
+            ],
+            "support": {
+                "issues": "https://github.com/Melipayamak/melipayamak-php/issues",
+                "source": "https://github.com/Melipayamak/melipayamak-php/tree/1.0.0"
+            },
+            "time": "2019-12-23T13:19:36+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -2878,6 +3095,96 @@
                 }
             ],
             "time": "2021-09-25T23:10:38+00:00"
+        },
+        {
+            "name": "realrashid/sweet-alert",
+            "version": "v7.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/realrashid/sweet-alert.git",
+                "reference": "769f951053cd3363fd7fb7a1dd30f9828b619b44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/realrashid/sweet-alert/zipball/769f951053cd3363fd7fb7a1dd30f9828b619b44",
+                "reference": "769f951053cd3363fd7fb7a1dd30f9828b619b44",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^5.6|^6.0|^7.0|^8.0|^9.0|^9.11|9.14.*|^10.0",
+                "php": "^7.2|^8.0|^8.1"
+            },
+            "require-dev": {
+                "symfony/thanks": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RealRashid\\SweetAlert\\SweetAlertServiceProvider"
+                    ],
+                    "aliases": {
+                        "Alert": "RealRashid\\SweetAlert\\Facades\\Alert"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "RealRashid\\SweetAlert\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rashid Ali",
+                    "email": "realrashid05@gmail.com",
+                    "homepage": "https://realrashid.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Sweet Alert Is A Package For Laravel Provides An Easy Way To Display Alert Messages Using The SweetAlert2 Library.",
+            "homepage": "https://github.com/realrashid/sweet-alert",
+            "keywords": [
+                "alert",
+                "laravel",
+                "laravel-package",
+                "notifier",
+                "noty",
+                "sweet-alert",
+                "sweet-alert2",
+                "toast"
+            ],
+            "support": {
+                "docs": "https://realrashid.github.io/sweet-alert/",
+                "email": "realrashid05@gmail.com",
+                "issues": "https://github.com/realrashid/sweet-alert/issues",
+                "source": "https://github.com/realrashid/sweet-alert"
+            },
+            "funding": [
+                {
+                    "url": "https://ko-fi.com/realrashid",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.buymeacoffee.com/realrashid",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://issuehunt.io/r/realrashid",
+                    "type": "issuehunt"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/realrashid/sweet-alert",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-08-07T19:23:17+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -7734,5 +8041,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.3.0"
 }

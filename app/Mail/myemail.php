@@ -13,13 +13,15 @@ class myemail extends Mailable
     public $phone_number;
     public $job;
     public $email;
+    public $city;
 
-    public function __construct($name, $phone_number,$job, $email )
+    public function __construct($name, $phone_number,$job, $email, $city )
     {
         $this->name = $name;
         $this->phone_number = $phone_number;
         $this->job = $job;
         $this->email = $email;
+        $this->city = $city;
 
 
     }
@@ -34,6 +36,7 @@ class myemail extends Mailable
                 'phone_number' => $this->phone_number,
                 'job'   => $this->job,
                 'email'   => $this->email,
+                'city'   => $this->city,
 
             ]);
     }
